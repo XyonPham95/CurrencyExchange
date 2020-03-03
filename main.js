@@ -1,7 +1,6 @@
 console.log('Im Javascript code running in your currency converter')
 
 const currency = prompt("VND or USD");
-let vndToUsd= "";
 let amount = 0;
 const exchangeRate = 23235;
 
@@ -34,13 +33,13 @@ if (currency === "VND") {
 
 function vndtoUsd() {
     let result = amount / exchangeRate;
-    console.log("vndtoUsd", result)
+    console.log("result is", result,"USD")
 }
 
 
 function usdtoVND() {
    let result = amount * exchangeRate;
-    console.log("usdtoVnd", result)
+    console.log("result is", result,"VND")
     
 }
 
