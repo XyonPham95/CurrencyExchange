@@ -3,10 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container-fluid">
+    <h1>Currency Converter</h1>
+
+    <div class="container">
+        <div class="a">
+    <label for="amount">How many?<br> </label>
+    <input type="number" id="amount"/>
+    </div>
+
+    <div class="b">
+    <h2>From</h2>
+    <select id="fromCurrency">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+        <option value="EUR">EUR</option>
+        <option value="KRW">KRW</option>
+        <option value="Yen">YEN</option>
+    </select>
+    </div> 
+
+    <div class="c">
+    <h2>To</h2>
+
+    <form>
+        <input type="radio" id="usd" name="toCurrency" value="USD">
+        <label for="usd">USD</label><br>
+        <input type="radio" id="eur" name="toCurrency" value="EUR">
+        <label for="eur">EUR</label><br>
+        <input type="radio" id="vnd" name="toCurrency" value="VND">
+        <label for="vnd">VND</label>
+        <input type="radio" id="krw" name="toCurrency" value="KRW">
+        <label for="krw">KRW</label>
+        <input type="radio" id="yen" name="toCurrency" value="YEN">
+        <label for="yen">YEN</label>
+      </form>
+      </div>
+
+      <button id="convertButton" onclick = "vndtoUSD()">Convert</button>
+    <div id="resultArea">Result will be here</div>
+    </div>
+    </div>
+    
+    
+  
+
+
   <!-- <div class="container">
     <div class="header">
       <h1>Currency Converter</h1>
